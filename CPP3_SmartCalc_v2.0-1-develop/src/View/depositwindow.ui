@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DepositWindow</class>
+ <widget class="QWidget" name="DepositWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame3">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>0</y>
+     <width>441</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+  background-color: transparent;
+  background-image: url(:/styles/plot_frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_deposit_amount_end_of_term">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>290</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/frame_label_deposit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_accrued_interest">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/frame_label_deposit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_income_after_taxes">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>200</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/frame_label_deposit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tax_amount">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>110</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/frame_label_deposit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/accrued_interest.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/tax_amount.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/income_after_taxes.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>290</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/deposit_amount_end_of_term.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame5">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>460</y>
+     <width>441</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+  background-color: transparent;
+  background-image: url(:/styles/plot_frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>421</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="WithdrawalsLayout">
+     <property name="spacing">
+      <number>-1</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QScrollArea" name="scrollWithdrawals">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>417</width>
+          <height>297</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/withdrawals.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_addWithdrawals">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 80px;
+  height: 80px;
+}
+
+QPushButton:pressed{
+  color: transparent;
+  background-image: url(:/styles/button/pressed.png);
+}</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_deleteWithdrawals">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 80px;
+  height: 80px;
+}
+
+QPushButton:pressed{
+  color: transparent;
+  background-image: url(:/styles/button/pressed.png);
+}</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>441</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+  background-color: transparent;
+  background-image: url(:/styles/plot_frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="labe_1">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/deposit_amount.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_depositAmount">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDoubleSpinBox{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame_big.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 160px;
+  height: 80px;
+}
+
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+  width: 0;
+  height: 0;
+}</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="minimum">
+     <double>1000.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>1000000000.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>1000.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/interest_rate_deposit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_interestRate">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>180</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDoubleSpinBox{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame_big.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 160px;
+  height: 80px;
+}
+
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+  width: 0;
+  height: 0;
+}</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="minimum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>99.989999999999995</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_taxRate">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>300</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDoubleSpinBox{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame_big.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 160px;
+  height: 80px;
+}
+
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+  width: 0;
+  height: 0;
+}</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="minimum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="maximum">
+     <double>99.989999999999995</double>
+    </property>
+    <property name="value">
+     <double>13.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/tax_rate.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>460</y>
+     <width>441</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+  background-color: transparent;
+  background-image: url(:/styles/plot_frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/periodicity_of_payments.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_everyQuarter">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>280</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/quarter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_everyDay">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>150</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/day.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_everyYear">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>280</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/year.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_everyWeek">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>150</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/week.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_everyHalf">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>280</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/half.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_everyMonth">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>150</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/month.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>0</y>
+     <width>441</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+  background-color: transparent;
+  background-image: url(:/styles/plot_frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>421</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="ReplenishmentsLayout">
+     <item>
+      <widget class="QScrollArea" name="scrollReplenishments">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>417</width>
+          <height>297</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/replenishments.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_addReplenishments">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 80px;
+  height: 80px;
+}
+
+QPushButton:pressed{
+  color: transparent;
+  background-image: url(:/styles/button/pressed.png);
+}</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_deleteReplenishments">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>40</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 80px;
+  height: 80px;
+}
+
+QPushButton:pressed{
+  color: transparent;
+  background-image: url(:/styles/button/pressed.png);
+}</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame6">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>460</y>
+     <width>441</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+  background-color: transparent;
+  background-image: url(:/styles/plot_frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+  background-color: transparent;
+  background-image: url(:/styles/label/deposit_term.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 191px;
+  height: 120px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_calc">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>280</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 80px;
+  height: 80px;
+}
+
+QPushButton:pressed{
+  color: transparent;
+  background-image: url(:/styles/button/pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ac">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>280</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/ac.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 160px;
+  height: 80px;
+}
+
+QPushButton:pressed{
+  background-image: url(:/styles/button/pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>341</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QRadioButton" name="radioButton_year">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>81</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/year.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_month">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>10</y>
+       <width>81</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/month.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_day">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>81</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/day.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_capitalization">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>280</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton{
+  background-color: transparent;
+  background-image: url(:/styles/button/cap.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+}
+
+QRadioButton:checked{
+  background-image: url(:/styles/button/pressed.png);
+}
+
+QRadioButton::indicator { width: 0px; }</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_depositTerm">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>40</y>
+      <width>181</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSpinBox{
+  background-color: transparent;
+  background-image: url(:/styles/button/frame_big.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  width: 160px;
+  height: 80px;
+}
+
+QSpinBox::up-button, QSpinBox::down-button {
+  width: 0;
+  height: 0;
+}</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>10000</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
